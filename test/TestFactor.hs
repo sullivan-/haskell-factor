@@ -4,7 +4,7 @@ import Factor
 import Test.HUnit
 
 main :: IO ()
-main = sequence_ (fmap testSolution solutions)
+main = sequence_ $ fmap testSolution solutions
 
 testSolution :: (Int, [Int]) -> IO ()
 testSolution (n, factors) = assertEqual ("factors of " ++ show n ++ " are: " ++ show factors) (factor n) factors
