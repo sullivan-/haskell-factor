@@ -13,7 +13,8 @@ testSolution (n, factors) = assertEqual ("factors of " ++ show n ++ " are: " ++ 
 -- trust to be correct
 solutions :: [(Int, [Int])]
 solutions =
-  [(2, [2]),
+  [(1, []),
+   (2, [2]),
    (3, [3]),
    (4, [2,2]),
    (5, [5]),

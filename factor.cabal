@@ -26,7 +26,8 @@ test-suite test-factor
   type: exitcode-stdio-1.0
   main-is: TestFactor.hs
   hs-source-dirs: test
-  build-depends: base, factor,
+  build-depends: base,
+                 factor,
                  test-framework,
                  test-framework-hunit,
                  HUnit
